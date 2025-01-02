@@ -8,17 +8,20 @@ $ImageDir = "$BasePath\Nodered Image"
 $ImageVersion = "1.0.0"
 $ImageName = "gkastner/works_show:$ImageVersion"
 
-# Defina o caminho e o nome do arquivo tar, incluindo a versão
-$TarFilePath = "$ImageDir\works_show_image_$ImageVersion.tar"
-
 # Navegar para o diretório da imagem
 Set-Location -Path $ImageDir
 
+# Login no Docker Hub (opcional, caso você não esteja autenticado)
+Write-Host "Fazendo login no Docker Hub..."
+docker login
+
 # Construir a imagem Docker
+Write-Host "Construindo a imagem Docker..."
 docker build -t $ImageName .
 
-# Salvar a imagem Docker em um arquivo tar no diretório do Dockerfile
-docker save -o $TarFilePath $ImageName
+# Push da imagem para o Docker Hub
+Write-Host "Enviando a imagem para o Docker Hub..."
+docker push $ImageName
 
-# Mensagem de conclusão
-Write-Host "Imagem Docker '$ImageName' criada e salva como '$TarFilePath' com sucesso!"
+# Mensagem de sucesso
+Write-Host "Imagem Docker '$ImageName' criada e enviada para o Docker Hub com sucesso!" -ForegroundColor Green
