@@ -1,31 +1,48 @@
-# Defina os caminhos relativos
-$secretsPath = "secret.json"
-$templatePath = "template_flows_cred.json"
-$outputDir = "..\Nodered Image"
-$outputCredPath = "$outputDir\flows_cred.json"
+# Definir variáveis para nomes de arquivos e diretórios
+$secretsFileName = "secrets.json"
+$templateFileName = "template_flows_cred.json"
+$outputCredFileName = "flows_cred.json"
+$settingsDir = "00 - Settings"
+$outputDirName = "Nodered Image"
+
+# Obtenha o caminho absoluto do diretório atual do script
+$scriptDir = Split-Path -Path $MyInvocation.MyCommand.Definition -Parent
+
+# Caminhos baseados nas variáveis
+$secretsPath = Join-Path -Path $scriptDir -ChildPath "$settingsDir\$secretsFileName"
+$templatePath = Join-Path -Path $scriptDir -ChildPath "$settingsDir\$templateFileName"
+$outputDir = Join-Path -Path $scriptDir -ChildPath $outputDirName
+$outputCredPath = Join-Path -Path $outputDir -ChildPath $outputCredFileName
 
 # Função para verificar se o arquivo existe
-function Validate-FileExists($filePath, $description) {
-    if (-Not (Test-Path -Path $filePath)) {
-        Write-Host "ERRO: O arquivo '$description' não foi encontrado em: $filePath" -ForegroundColor Red
+function Test-FileExists {
+    param (
+        [string]$FilePath,
+        [string]$Description
+    )
+    if (-Not (Test-Path -Path $FilePath)) {
+        Write-Host "ERRO: O arquivo '$Description' não foi encontrado em: $FilePath" -ForegroundColor Red
         exit 1
     }
 }
 
 # Função para verificar ou criar o diretório de saída
-function Validate-OrCreateDirectory($dirPath) {
-    if (-Not (Test-Path -Path $dirPath)) {
-        Write-Host "Aviso: O diretório de saída não existe. Criando: $dirPath" -ForegroundColor Yellow
-        New-Item -ItemType Directory -Path $dirPath -Force
+function Ensure-DirectoryExists {
+    param (
+        [string]$DirPath
+    )
+    if (-Not (Test-Path -Path $DirPath)) {
+        Write-Host "Aviso: O diretório de saída não existe. Criando: $DirPath" -ForegroundColor Yellow
+        New-Item -ItemType Directory -Path $DirPath -Force
     }
 }
 
 # Validar arquivos de entrada
-Validate-FileExists $secretsPath "secrets.json"
-Validate-FileExists $templatePath "template_flows_cred.json"
+Test-FileExists -FilePath $secretsPath -Description "secrets.json"
+Test-FileExists -FilePath $templatePath -Description "template_flows_cred.json"
 
 # Validar ou criar o diretório de saída
-Validate-OrCreateDirectory $outputDir
+Ensure-DirectoryExists -DirPath $outputDir
 
 # Leia os dados do secrets.json
 $secrets = Get-Content -Path $secretsPath | ConvertFrom-Json
@@ -37,10 +54,13 @@ $templateContent = Get-Content -Path $templatePath -Raw
 $templateContent = $templateContent -replace "{{user}}", $secrets.user
 $templateContent = $templateContent -replace "{{password}}", $secrets.password
 $templateContent = $templateContent -replace "{{agent}}", $secrets.agent
-$templateContent = $templateContent -replace "{{agentPassword}}", $secrets.agentPassword
+
+# Corrigir o escaping do agentPassword para que as barras sejam tratadas corretamente
+$escapedAgentPassword = $secrets.agentPassword -replace "(\\)", "\\"
+$templateContent = $templateContent -replace "{{agentPassword}}", $escapedAgentPassword
 
 # Salve o conteúdo modificado no arquivo flows_cred.json
 Set-Content -Path $outputCredPath -Value $templateContent -Encoding UTF8
 
 # Mensagem de sucesso
-Write-Host "Arquivo 'flows_cred.json' gerado com sucesso em: $outputCredPath" -ForegroundColor Green
+Write-Host "Arquivo '$outputCredFileName' gerado com sucesso em: $outputDir" -ForegroundColor Green
