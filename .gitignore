@@ -1,6 +1,9 @@
 # Ignorar secrets.json e outros arquivos sensíveis
 00 - Settings/secrets.json
 
+# Ignorar secrets.json e outros arquivos sensíveis
+02 - Docker compose/01 - Templates/flows.json
+
 # Ignorar credenciais geradas
 Nodered Image/flows_cred.json
 

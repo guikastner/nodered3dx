@@ -1,0 +1,2626 @@
+[
+    {
+        "id": "c0dd4a6d4d7bf9e0",
+        "type": "tab",
+        "label": "01 - Download pdfs",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "61f033226d93ab2c",
+        "type": "subflow",
+        "name": "Get Details",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 80,
+                "y": 40,
+                "wires": [
+                    {
+                        "id": "0a665df3a36b426a"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 1140,
+                "y": 180,
+                "wires": [
+                    {
+                        "id": "d5bb3fd21bdd1ee7",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 1010,
+                "y": 40,
+                "wires": [
+                    {
+                        "id": "ec0e83abbcdbaa40",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99",
+        "outputLabels": [
+            "Continue",
+            "Stop"
+        ],
+        "status": {
+            "x": 1140,
+            "y": 400,
+            "wires": [
+                {
+                    "id": "571f9cd5c1628646",
+                    "port": 0
+                },
+                {
+                    "id": "c789fbe88c6d05be",
+                    "port": 0
+                },
+                {
+                    "id": "ef481011b0a9fb87",
+                    "port": 0
+                }
+            ]
+        }
+    },
+    {
+        "id": "54ffaf761b3ddaef",
+        "type": "subflow",
+        "name": "Get Derived Output",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 40,
+                "y": 60,
+                "wires": [
+                    {
+                        "id": "e209ae0e04d134ec"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 1160,
+                "y": 180,
+                "wires": [
+                    {
+                        "id": "c69b03714c494d4a",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99",
+        "status": {
+            "x": 1180,
+            "y": 440,
+            "wires": [
+                {
+                    "id": "f404978a06b68526",
+                    "port": 0
+                },
+                {
+                    "id": "7596da1fa711fe82",
+                    "port": 0
+                },
+                {
+                    "id": "5d15a0c00297c645",
+                    "port": 0
+                }
+            ]
+        }
+    },
+    {
+        "id": "f90a14e52254d964",
+        "type": "subflow",
+        "name": "Download Files",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 40,
+                "y": 60,
+                "wires": [
+                    {
+                        "id": "c2a4abd8895e3f6f"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 920,
+                "y": 300,
+                "wires": [
+                    {
+                        "id": "f23745bddd09a037",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 1320,
+                "y": 60,
+                "wires": [
+                    {
+                        "id": "f383819e0217fd11",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99",
+        "status": {
+            "x": 1220,
+            "y": 500,
+            "wires": [
+                {
+                    "id": "778fdb6d6721a4cf",
+                    "port": 0
+                },
+                {
+                    "id": "f1efe8c4936bad3d",
+                    "port": 0
+                },
+                {
+                    "id": "7ee4e349a4f718d3",
+                    "port": 0
+                },
+                {
+                    "id": "9417a4ae7c013e74",
+                    "port": 0
+                }
+            ]
+        }
+    },
+    {
+        "id": "e43b461d0a417bdc",
+        "type": "subflow",
+        "name": "Loop",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 50,
+                "y": 30,
+                "wires": [
+                    {
+                        "id": "a3d4a411d870764f"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 680,
+                "y": 180,
+                "wires": [
+                    {
+                        "id": "aac9aba8e999aa72",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 830,
+                "y": 120,
+                "wires": [
+                    {
+                        "id": "b7edf4efde8db338",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99",
+        "outputLabels": [
+            "continue",
+            "pare"
+        ]
+    },
+    {
+        "id": "d18507d750d6e5f3",
+        "type": "subflow",
+        "name": "Search",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 40,
+                "y": 40,
+                "wires": [
+                    {
+                        "id": "7f1f5e479fea0bf7"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 1040,
+                "y": 40,
+                "wires": [
+                    {
+                        "id": "22acda0b41ab3309",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99",
+        "status": {
+            "x": 1040,
+            "y": 180,
+            "wires": [
+                {
+                    "id": "37dff94bfc7ea001",
+                    "port": 0
+                },
+                {
+                    "id": "198b773893604d03",
+                    "port": 0
+                },
+                {
+                    "id": "2b6ecbb214dc59ec",
+                    "port": 0
+                }
+            ]
+        }
+    },
+    {
+        "id": "4bf058b360ea16ed",
+        "type": "subflow",
+        "name": "0 - Easy Call",
+        "info": "",
+        "category": "BOM",
+        "in": [
+            {
+                "x": 50,
+                "y": 30,
+                "wires": []
+            }
+        ],
+        "out": [
+            {
+                "x": 800,
+                "y": 40,
+                "wires": []
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "cfb30436034df5d7",
+        "type": "group",
+        "z": "c0dd4a6d4d7bf9e0",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "b76d7293a8595b6e",
+            "0c568eab4d58ab52",
+            "7643bdab3314cf41",
+            "b4ea4f1ffd335565",
+            "7d2cb35923575a35",
+            "1d35d2af762e16fd",
+            "dd16b575d64bc777"
+        ],
+        "x": 494,
+        "y": 59,
+        "w": 612,
+        "h": 262
+    },
+    {
+        "id": "d05fc754ac30dda4",
+        "type": "3dx-env-config",
+        "name": "BT - NAM - ENV",
+        "compassUrl": "{{compassurl}}",
+        "tenant": "{{tenant}}",
+        "services": []
+    },
+    {
+        "id": "dfdf26a733623cf0",
+        "type": "3dx-agent-config",
+        "name": "GuiKastner - Agente"
+    },
+    {
+        "id": "1cdc4bab67953ea5",
+        "type": "3dx-login-config",
+        "name": "guikastner"
+    },
+    {
+        "id": "9af5180ef9b94f79",
+        "type": "3dx-client-config",
+        "name": "gui kastner",
+        "mode": "login",
+        "environment": "d05fc754ac30dda4",
+        "agent": "dfdf26a733623cf0",
+        "login": "1cdc4bab67953ea5",
+        "batch": "",
+        "service": "space",
+        "serviceName": "",
+        "securityContextHeader": "auto",
+        "securityContextHeaderOverride": "",
+        "CSRFHeader": "auto"
+    },
+    {
+        "id": "0a665df3a36b426a",
+        "type": "change",
+        "z": "61f033226d93ab2c",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.member",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "drawings",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 200,
+        "y": 40,
+        "wires": [
+            [
+                "c1299cdfd55696d5"
+            ]
+        ]
+    },
+    {
+        "id": "c1299cdfd55696d5",
+        "type": "change",
+        "z": "61f033226d93ab2c",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "loop",
+                "pt": "msg",
+                "to": "0",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 370,
+        "y": 40,
+        "wires": [
+            [
+                "ac1c7e6cf8ba6a43"
+            ]
+        ]
+    },
+    {
+        "id": "ac1c7e6cf8ba6a43",
+        "type": "function",
+        "z": "61f033226d93ab2c",
+        "name": "arraySize",
+        "func": "// Obtém a array de dispositivos\nlet message = msg.drawings;\n\n// Verifica o tamanho da array\nlet arraySize = message.length;\n\n// Define o payload com o tamanho da array\nmsg.qtd = { \"arraySize\": arraySize };\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 40,
+        "wires": [
+            [
+                "02b742839a5d163e"
+            ]
+        ]
+    },
+    {
+        "id": "3af41d6a67033d77",
+        "type": "function",
+        "z": "61f033226d93ab2c",
+        "name": "test",
+        "func": "var logicalTest = msg.qtd.arraySize - 1;\nif (logicalTest > msg.loop) {\n    msg.test = \"continue\";\n} else {\n    msg.test = \"stop\";\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 170,
+        "y": 100,
+        "wires": [
+            [
+                "fef211a1a9f66f32"
+            ]
+        ]
+    },
+    {
+        "id": "fef211a1a9f66f32",
+        "type": "function",
+        "z": "61f033226d93ab2c",
+        "name": "new drawingProperties",
+        "func": "if (!msg.drawingProperties) {\n    msg.drawingProperties = [];\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 100,
+        "wires": [
+            [
+                "bf02b0dd5bf69b62"
+            ]
+        ]
+    },
+    {
+        "id": "bf02b0dd5bf69b62",
+        "type": "function",
+        "z": "61f033226d93ab2c",
+        "name": "relativePath",
+        "func": "msg.relativePath = \"/resources/v1/modeler/dsxcad/dsxcad:Drawing/\" + msg.drawings[msg.loop].id;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 100,
+        "wires": [
+            [
+                "754848a78d4df138"
+            ]
+        ]
+    },
+    {
+        "id": "754848a78d4df138",
+        "type": "function",
+        "z": "61f033226d93ab2c",
+        "name": "Set call",
+        "func": "msg.payload = {\n    method: \"GET\",\n    url: msg.relativePath\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 180,
+        "y": 160,
+        "wires": [
+            [
+                "7185fed8ec5dfbf7",
+                "571f9cd5c1628646"
+            ]
+        ]
+    },
+    {
+        "id": "7185fed8ec5dfbf7",
+        "type": "3dx-request",
+        "z": "61f033226d93ab2c",
+        "name": "",
+        "client": "9af5180ef9b94f79",
+        "responseType": "json",
+        "requestUrl": "",
+        "requestMethod": "",
+        "requestBody": "",
+        "x": 330,
+        "y": 160,
+        "wires": [
+            [
+                "ec76ed3de9e0f807"
+            ]
+        ]
+    },
+    {
+        "id": "ec76ed3de9e0f807",
+        "type": "change",
+        "z": "61f033226d93ab2c",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.member",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 160,
+        "wires": [
+            [
+                "076a5eb677d1e0fc"
+            ]
+        ]
+    },
+    {
+        "id": "076a5eb677d1e0fc",
+        "type": "split",
+        "z": "61f033226d93ab2c",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 170,
+        "y": 220,
+        "wires": [
+            [
+                "62bb92d3339d29c1"
+            ]
+        ]
+    },
+    {
+        "id": "62bb92d3339d29c1",
+        "type": "function",
+        "z": "61f033226d93ab2c",
+        "name": "drawingProperties",
+        "func": "let drawingProperties = msg.payload;\nmsg.drawingProperties.push(drawingProperties);\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 220,
+        "wires": [
+            [
+                "aa1b402aca1c9926"
+            ]
+        ]
+    },
+    {
+        "id": "aa1b402aca1c9926",
+        "type": "function",
+        "z": "61f033226d93ab2c",
+        "name": "count loop",
+        "func": "msg.loop = msg.loop + 1;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 220,
+        "wires": [
+            [
+                "3ddb0143f5077ebd"
+            ]
+        ]
+    },
+    {
+        "id": "3ddb0143f5077ebd",
+        "type": "delay",
+        "z": "61f033226d93ab2c",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "0.01",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 690,
+        "y": 220,
+        "wires": [
+            [
+                "37d2496ca27dd254"
+            ]
+        ]
+    },
+    {
+        "id": "37d2496ca27dd254",
+        "type": "switch",
+        "z": "61f033226d93ab2c",
+        "name": "",
+        "property": "test",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "continue",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "stop",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 750,
+        "y": 120,
+        "wires": [
+            [
+                "ac1c7e6cf8ba6a43"
+            ],
+            [
+                "cfe9be42fc99f579",
+                "c789fbe88c6d05be",
+                "7102867e9771858d"
+            ]
+        ]
+    },
+    {
+        "id": "cfe9be42fc99f579",
+        "type": "change",
+        "z": "61f033226d93ab2c",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "drawingProperties",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 940,
+        "y": 120,
+        "wires": [
+            [
+                "d5bb3fd21bdd1ee7"
+            ]
+        ]
+    },
+    {
+        "id": "d5bb3fd21bdd1ee7",
+        "type": "change",
+        "z": "61f033226d93ab2c",
+        "name": "",
+        "rules": [
+            {
+                "t": "delete",
+                "p": "eventClass",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "eventType",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "contentType",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "user",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 960,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "571f9cd5c1628646",
+        "type": "function",
+        "z": "61f033226d93ab2c",
+        "name": "loop count",
+        "func": "var loop = msg.loop + 1;\nmsg.payload = \"Loop \" + loop + \"/\" + msg.qtd.arraySize;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 750,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c789fbe88c6d05be",
+        "type": "function",
+        "z": "61f033226d93ab2c",
+        "name": "loop count",
+        "func": "msg.payload = \"-\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 770,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7102867e9771858d",
+        "type": "delay",
+        "z": "61f033226d93ab2c",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "10",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 820,
+        "y": 360,
+        "wires": [
+            [
+                "ef481011b0a9fb87"
+            ]
+        ]
+    },
+    {
+        "id": "ef481011b0a9fb87",
+        "type": "function",
+        "z": "61f033226d93ab2c",
+        "name": "loop count",
+        "func": "msg.payload = \"\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 990,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "02b742839a5d163e",
+        "type": "switch",
+        "z": "61f033226d93ab2c",
+        "name": "",
+        "property": "qtd.arraySize",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gt",
+                "v": "0",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 650,
+        "y": 40,
+        "wires": [
+            [
+                "3af41d6a67033d77"
+            ],
+            [
+                "ec0e83abbcdbaa40"
+            ]
+        ]
+    },
+    {
+        "id": "ec0e83abbcdbaa40",
+        "type": "change",
+        "z": "61f033226d93ab2c",
+        "name": "",
+        "rules": [
+            {
+                "t": "delete",
+                "p": "payload",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "teste",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "top",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "skip",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "searchn",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "loop",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "qtd",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 860,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e209ae0e04d134ec",
+        "type": "change",
+        "z": "54ffaf761b3ddaef",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "drawings",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 190,
+        "y": 60,
+        "wires": [
+            [
+                "531321f7565bd85e"
+            ]
+        ]
+    },
+    {
+        "id": "b65b48e770d0a2aa",
+        "type": "function",
+        "z": "54ffaf761b3ddaef",
+        "name": "arraySize",
+        "func": "// Obtém a array de dispositivos\nlet message = msg.drawingProperties;\n\n// Verifica o tamanho da array\nlet arraySize = message.length;\n\n// Define o payload com o tamanho da array\nmsg.qtd = { \"arraySize\": arraySize };\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 740,
+        "y": 60,
+        "wires": [
+            [
+                "8ab121b33fa56233"
+            ]
+        ]
+    },
+    {
+        "id": "8ab121b33fa56233",
+        "type": "switch",
+        "z": "54ffaf761b3ddaef",
+        "name": "",
+        "property": "qtd.arraySize",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gt",
+                "v": "0",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 870,
+        "y": 60,
+        "wires": [
+            [
+                "a0912b2d3cbc6254"
+            ]
+        ]
+    },
+    {
+        "id": "a0912b2d3cbc6254",
+        "type": "function",
+        "z": "54ffaf761b3ddaef",
+        "name": "test",
+        "func": "var logicalTest = msg.qtd.arraySize - 1;\nif (logicalTest > msg.loop) {\n    msg.test = \"continue\";\n} else {\n    msg.test = \"stop\";\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 190,
+        "y": 120,
+        "wires": [
+            [
+                "4feccdc9f4e200d4"
+            ]
+        ]
+    },
+    {
+        "id": "4feccdc9f4e200d4",
+        "type": "function",
+        "z": "54ffaf761b3ddaef",
+        "name": "new derivedOutput",
+        "func": "if (!msg.derivedOutput) {\n    msg.derivedOutput = [];\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 120,
+        "wires": [
+            [
+                "cf3fb6b132dbf187"
+            ]
+        ]
+    },
+    {
+        "id": "cf3fb6b132dbf187",
+        "type": "function",
+        "z": "54ffaf761b3ddaef",
+        "name": "relativePath",
+        "func": "msg.relativePath = \"/resources/v1/modeler/dsdo/dsdo:DerivedOutputs/\" + msg.drawingProperties[msg.loop].id + \"?$mask=dsmvdo:DerivedOutputsMask.Details\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 210,
+        "y": 180,
+        "wires": [
+            [
+                "237d9f1e2eb2b24b"
+            ]
+        ]
+    },
+    {
+        "id": "237d9f1e2eb2b24b",
+        "type": "function",
+        "z": "54ffaf761b3ddaef",
+        "name": "Set call",
+        "func": "msg.payload = {\n    method: \"GET\",\n    url: msg.relativePath,\n    headers:\n    {\n        \"SecurityContext\": msg.authorization\n    }\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 180,
+        "wires": [
+            [
+                "906deeb1face8438",
+                "f404978a06b68526"
+            ]
+        ]
+    },
+    {
+        "id": "1528161e398b69d9",
+        "type": "change",
+        "z": "54ffaf761b3ddaef",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.member",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 220,
+        "y": 240,
+        "wires": [
+            [
+                "824ff6e642457b84"
+            ]
+        ]
+    },
+    {
+        "id": "824ff6e642457b84",
+        "type": "split",
+        "z": "54ffaf761b3ddaef",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 370,
+        "y": 240,
+        "wires": [
+            [
+                "42888cdf8c3bfec6"
+            ]
+        ]
+    },
+    {
+        "id": "906deeb1face8438",
+        "type": "3dx-request",
+        "z": "54ffaf761b3ddaef",
+        "name": "",
+        "client": "9af5180ef9b94f79",
+        "responseType": "json",
+        "requestUrl": "",
+        "requestMethod": "",
+        "requestBody": "",
+        "x": 510,
+        "y": 180,
+        "wires": [
+            [
+                "1528161e398b69d9"
+            ]
+        ]
+    },
+    {
+        "id": "42888cdf8c3bfec6",
+        "type": "function",
+        "z": "54ffaf761b3ddaef",
+        "name": "drawingProperties",
+        "func": "let derivedOutput = msg.payload;\nmsg.derivedOutput.push(derivedOutput);\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 240,
+        "wires": [
+            [
+                "88d94d23f840b1bb"
+            ]
+        ]
+    },
+    {
+        "id": "88d94d23f840b1bb",
+        "type": "function",
+        "z": "54ffaf761b3ddaef",
+        "name": "count loop",
+        "func": "msg.loop = msg.loop + 1;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 610,
+        "y": 340,
+        "wires": [
+            [
+                "8f3b0b02c5268438"
+            ]
+        ]
+    },
+    {
+        "id": "8f3b0b02c5268438",
+        "type": "delay",
+        "z": "54ffaf761b3ddaef",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "0.1",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 770,
+        "y": 340,
+        "wires": [
+            [
+                "037aa3da2d07eab7"
+            ]
+        ]
+    },
+    {
+        "id": "037aa3da2d07eab7",
+        "type": "switch",
+        "z": "54ffaf761b3ddaef",
+        "name": "",
+        "property": "test",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "continue",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "stop",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 810,
+        "y": 180,
+        "wires": [
+            [
+                "b65b48e770d0a2aa"
+            ],
+            [
+                "c69b03714c494d4a",
+                "7596da1fa711fe82",
+                "a2b6a122cc8a7160"
+            ]
+        ]
+    },
+    {
+        "id": "c69b03714c494d4a",
+        "type": "change",
+        "z": "54ffaf761b3ddaef",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "derivedOutput",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1020,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f404978a06b68526",
+        "type": "function",
+        "z": "54ffaf761b3ddaef",
+        "name": "loop count",
+        "func": "var loop = msg.loop + 1;\nmsg.payload = \"Loop \" + loop + \"/\" + msg.qtd.arraySize;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 490,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7596da1fa711fe82",
+        "type": "function",
+        "z": "54ffaf761b3ddaef",
+        "name": "loop count",
+        "func": "msg.payload = \"-\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1010,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a2b6a122cc8a7160",
+        "type": "delay",
+        "z": "54ffaf761b3ddaef",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "10",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1060,
+        "y": 320,
+        "wires": [
+            [
+                "5d15a0c00297c645"
+            ]
+        ]
+    },
+    {
+        "id": "5d15a0c00297c645",
+        "type": "function",
+        "z": "54ffaf761b3ddaef",
+        "name": "loop count",
+        "func": "msg.payload = \"\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1230,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "531321f7565bd85e",
+        "type": "change",
+        "z": "54ffaf761b3ddaef",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "loop",
+                "pt": "msg",
+                "to": "0",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 490,
+        "y": 60,
+        "wires": [
+            [
+                "b65b48e770d0a2aa"
+            ]
+        ]
+    },
+    {
+        "id": "c2a4abd8895e3f6f",
+        "type": "change",
+        "z": "f90a14e52254d964",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "drawings",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 210,
+        "y": 60,
+        "wires": [
+            [
+                "872da12b0a2def0b"
+            ]
+        ]
+    },
+    {
+        "id": "25395bf09056f525",
+        "type": "function",
+        "z": "f90a14e52254d964",
+        "name": "arraySize",
+        "func": "// Obtém a array de dispositivos\nlet message = msg.drawingProperties;\n\n// Verifica o tamanho da array\nlet arraySize = message.length;\n\n// Define o payload com o tamanho da array\nmsg.qtd = { \"arraySize\": arraySize };\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 640,
+        "y": 60,
+        "wires": [
+            [
+                "abe9ee4ab43dc5d6"
+            ]
+        ]
+    },
+    {
+        "id": "abe9ee4ab43dc5d6",
+        "type": "switch",
+        "z": "f90a14e52254d964",
+        "name": "",
+        "property": "qtd.arraySize",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gt",
+                "v": "0",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 770,
+        "y": 60,
+        "wires": [
+            [
+                "18ca350d80c46bf3"
+            ]
+        ]
+    },
+    {
+        "id": "18ca350d80c46bf3",
+        "type": "function",
+        "z": "f90a14e52254d964",
+        "name": "msg.filename",
+        "func": "msg.filename = msg.drawingProperties[msg.loop].title + \" - Rev \" + msg.drawingProperties[msg.loop].revision;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 190,
+        "y": 120,
+        "wires": [
+            [
+                "61fe90909edb4940"
+            ]
+        ]
+    },
+    {
+        "id": "61fe90909edb4940",
+        "type": "function",
+        "z": "f90a14e52254d964",
+        "name": "test",
+        "func": "var logicalTest = msg.qtd.arraySize - 1;\nif (logicalTest > msg.loop) {\n    msg.test = \"continue\";\n} else {\n    msg.test = \"stop\";\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 120,
+        "wires": [
+            [
+                "ce94ec2faed1b476"
+            ]
+        ]
+    },
+    {
+        "id": "ce94ec2faed1b476",
+        "type": "function",
+        "z": "f90a14e52254d964",
+        "name": "relativePath",
+        "func": "var did = msg.derivedOutput[msg.loop].derivedOutputs.derivedOutputfiles[0].id\nmsg.relativePath = \"/resources/v1/modeler/dsdo/dsdo:DerivedOutputs/\" + msg.derivedOutput[msg.loop].derivedOutputs.id + \"/dsdo:DerivedOutputFiles/\" + did + \"/DownloadTicket\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 120,
+        "wires": [
+            [
+                "32564cd1425e944e"
+            ]
+        ]
+    },
+    {
+        "id": "32564cd1425e944e",
+        "type": "function",
+        "z": "f90a14e52254d964",
+        "name": "Set call",
+        "func": "msg.payload = {\n    method: \"Post\",\n    url: msg.relativePath,\n    headers:\n    {\n        \"Content-Type\": \"application/json\"\n    }\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 180,
+        "y": 180,
+        "wires": [
+            [
+                "a0083c12bca328f2"
+            ]
+        ]
+    },
+    {
+        "id": "a0083c12bca328f2",
+        "type": "3dx-request",
+        "z": "f90a14e52254d964",
+        "name": "",
+        "client": "9af5180ef9b94f79",
+        "responseType": "json",
+        "requestUrl": "",
+        "requestMethod": "",
+        "requestBody": "",
+        "x": 330,
+        "y": 180,
+        "wires": [
+            [
+                "0f5282db64408826",
+                "778fdb6d6721a4cf"
+            ]
+        ]
+    },
+    {
+        "id": "0f5282db64408826",
+        "type": "change",
+        "z": "f90a14e52254d964",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.data.dataelements",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 180,
+        "wires": [
+            [
+                "366fe972bcedc4b2"
+            ]
+        ]
+    },
+    {
+        "id": "366fe972bcedc4b2",
+        "type": "change",
+        "z": "f90a14e52254d964",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ticket",
+                "pt": "msg",
+                "to": "payload.ticket",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "url",
+                "pt": "msg",
+                "to": "payload.ticketURL",
+                "tot": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "payload",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 680,
+        "y": 180,
+        "wires": [
+            [
+                "ee04d1b1d1502a37"
+            ]
+        ]
+    },
+    {
+        "id": "ee04d1b1d1502a37",
+        "type": "change",
+        "z": "f90a14e52254d964",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload.__fcs__jobTicket",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 920,
+        "y": 120,
+        "wires": [
+            [
+                "421d7a611175743c"
+            ]
+        ]
+    },
+    {
+        "id": "421d7a611175743c",
+        "type": "function",
+        "z": "f90a14e52254d964",
+        "name": "download call",
+        "func": "msg.payload.__fcs__jobTicket = msg.ticket;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1180,
+        "y": 120,
+        "wires": [
+            [
+                "f383819e0217fd11"
+            ]
+        ]
+    },
+    {
+        "id": "f383819e0217fd11",
+        "type": "http request",
+        "z": "f90a14e52254d964",
+        "name": "",
+        "method": "POST",
+        "ret": "bin",
+        "paytoqs": "body",
+        "url": "https://us1-dfcs.3dexperience.3ds.com/fcs/servlet/fcs/checkout",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [
+            {
+                "keyType": "other",
+                "keyValue": "Content-Type",
+                "valueType": "other",
+                "valueValue": "application/x-www-form-urlencoded"
+            }
+        ],
+        "x": 970,
+        "y": 180,
+        "wires": [
+            [
+                "fb34020e4fb357e5",
+                "f1efe8c4936bad3d"
+            ]
+        ]
+    },
+    {
+        "id": "fb34020e4fb357e5",
+        "type": "function",
+        "z": "f90a14e52254d964",
+        "name": "local de arquivo",
+        "func": "// Verifica se msg.filename está presente na mensagem\nif (msg.filename) {\n    // Define o diretório base dentro do container Node-RED (caminho padrão)\n    const diretorioNodeRed = \"/data/\"; // Substitua pelo caminho padrão, se for diferente\n\n    // Concatena o diretório base com msg.filename, salvando na pasta 'pdf'\n    msg.filename = diretorioNodeRed + \"PDF/\" + msg.filename + \".pdf\";\n\n    // Retorna a mensagem modificada\n    return msg;\n} else {\n    // Se msg.filename não estiver presente, envia um aviso\n    node.warn(\"msg.filename não encontrado na mensagem\");\n    return null; // Retorna null para descartar a mensagem\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 200,
+        "y": 240,
+        "wires": [
+            [
+                "d01ffbaea1692cba"
+            ]
+        ]
+    },
+    {
+        "id": "d01ffbaea1692cba",
+        "type": "file",
+        "z": "f90a14e52254d964",
+        "name": "",
+        "filename": "filename",
+        "filenameType": "msg",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 360,
+        "y": 240,
+        "wires": [
+            [
+                "e0fd4efcd3983789"
+            ]
+        ]
+    },
+    {
+        "id": "e0fd4efcd3983789",
+        "type": "function",
+        "z": "f90a14e52254d964",
+        "name": "count loop",
+        "func": "msg.loop = msg.loop + 1;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 190,
+        "y": 300,
+        "wires": [
+            [
+                "44856d563fb1a99a"
+            ]
+        ]
+    },
+    {
+        "id": "44856d563fb1a99a",
+        "type": "delay",
+        "z": "f90a14e52254d964",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": ".1",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 340,
+        "y": 300,
+        "wires": [
+            [
+                "62196f6db347d3a6"
+            ]
+        ]
+    },
+    {
+        "id": "62196f6db347d3a6",
+        "type": "switch",
+        "z": "f90a14e52254d964",
+        "name": "",
+        "property": "test",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "continue",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "stop",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 510,
+        "y": 300,
+        "wires": [
+            [
+                "25395bf09056f525"
+            ],
+            [
+                "7ee4e349a4f718d3",
+                "f23745bddd09a037"
+            ]
+        ]
+    },
+    {
+        "id": "778fdb6d6721a4cf",
+        "type": "function",
+        "z": "f90a14e52254d964",
+        "name": "loop count",
+        "func": "var loop = msg.loop + 1;\nmsg.payload = \"Loop \" + loop + \"/\" + msg.qtd.arraySize;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f1efe8c4936bad3d",
+        "type": "function",
+        "z": "f90a14e52254d964",
+        "name": "loop count",
+        "func": "var loop = msg.loop + 1;\nmsg.payload = \"Download \" + loop + \"/\" + msg.qtd.arraySize;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 990,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7ee4e349a4f718d3",
+        "type": "function",
+        "z": "f90a14e52254d964",
+        "name": "loop count",
+        "func": "var loop = msg.loop + 1;\nmsg.payload = \"Concluido\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 440,
+        "wires": [
+            [
+                "aaffa553b2f43987"
+            ]
+        ]
+    },
+    {
+        "id": "f23745bddd09a037",
+        "type": "change",
+        "z": "f90a14e52254d964",
+        "name": "",
+        "rules": [
+            {
+                "t": "delete",
+                "p": "identifier",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "qtd",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "loop",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "test",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "relativePath",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "filename",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "ticket",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "url",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "headers",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "drawings",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "drawingProperties",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "derivedOutput",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "payload",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "responseCookies",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "retry",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "responseCookies",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "responseUrl",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "statusCode",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "parts",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "redirectList",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 730,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "872da12b0a2def0b",
+        "type": "change",
+        "z": "f90a14e52254d964",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "loop",
+                "pt": "msg",
+                "to": "0",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 410,
+        "y": 60,
+        "wires": [
+            [
+                "25395bf09056f525"
+            ]
+        ]
+    },
+    {
+        "id": "aaffa553b2f43987",
+        "type": "delay",
+        "z": "f90a14e52254d964",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 700,
+        "y": 500,
+        "wires": [
+            [
+                "9417a4ae7c013e74"
+            ]
+        ]
+    },
+    {
+        "id": "9417a4ae7c013e74",
+        "type": "function",
+        "z": "f90a14e52254d964",
+        "name": "loop count",
+        "func": "msg.payload = \"\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 850,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a3d4a411d870764f",
+        "type": "function",
+        "z": "e43b461d0a417bdc",
+        "name": "soma skip",
+        "func": "msg.skip = msg.skip + msg.totalItems\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 180,
+        "y": 100,
+        "wires": [
+            [
+                "0785db915938b235"
+            ]
+        ]
+    },
+    {
+        "id": "0785db915938b235",
+        "type": "function",
+        "z": "e43b461d0a417bdc",
+        "name": "logical test",
+        "func": "// Obtendo o valor de msg.totalItems\nvar totalItems = msg.totalItems;\n\nif (totalItems >= msg.top) {\n    msg.teste = \"continue\";\n} else {\n    // Se for menor que msg.top, definir msg.teste como \"pare\"\n    msg.teste = \"pare\";\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 100,
+        "wires": [
+            [
+                "2b7a2c98991b2620"
+            ]
+        ]
+    },
+    {
+        "id": "2b7a2c98991b2620",
+        "type": "switch",
+        "z": "e43b461d0a417bdc",
+        "name": "",
+        "property": "teste",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "pare",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "continue",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 170,
+        "y": 160,
+        "wires": [
+            [
+                "b7edf4efde8db338"
+            ],
+            [
+                "aac9aba8e999aa72"
+            ]
+        ]
+    },
+    {
+        "id": "aac9aba8e999aa72",
+        "type": "function",
+        "z": "e43b461d0a417bdc",
+        "name": "searchn + 1",
+        "func": "msg.searchn = msg.searchn + 1;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b7edf4efde8db338",
+        "type": "change",
+        "z": "e43b461d0a417bdc",
+        "name": "",
+        "rules": [
+            {
+                "t": "delete",
+                "p": "top",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "skip",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "searchn",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "totalItems",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "teste",
+                "pt": "msg"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Finished",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 640,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7f1f5e479fea0bf7",
+        "type": "function",
+        "z": "d18507d750d6e5f3",
+        "name": "search string",
+        "func": "msg.payload = '[ds6w:project]:\"Kastner - Workshop\" AND [ds6w:isLastRevision]:TRUE [ds6w:status]:\"*RELEASED\" AND [ds6w:cadMaster]:\"solidworks\"';\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 170,
+        "y": 40,
+        "wires": [
+            [
+                "33847454b141dfc1"
+            ]
+        ]
+    },
+    {
+        "id": "33847454b141dfc1",
+        "type": "function",
+        "z": "d18507d750d6e5f3",
+        "name": "URL",
+        "func": "msg.payload = msg.source + \"/resources/v1/modeler/dsdrw/dsdrw:Drawing/Search\" +\n    \"?$skip=\" + msg.skip + \"&$top=\" + msg.top +\n    \"&$searchStr=\" + msg.payload + \"&$mask=dsmvdrw:DrawingMask.Details\"\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 40,
+        "wires": [
+            [
+                "f0c0ec2b2d9bdb98"
+            ]
+        ]
+    },
+    {
+        "id": "f0c0ec2b2d9bdb98",
+        "type": "function",
+        "z": "d18507d750d6e5f3",
+        "name": "Set call",
+        "func": "msg.payload = {\n    method: \"GET\",\n    url: msg.payload\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 40,
+        "wires": [
+            [
+                "d28ec92d099d702a",
+                "37dff94bfc7ea001"
+            ]
+        ]
+    },
+    {
+        "id": "d28ec92d099d702a",
+        "type": "3dx-request",
+        "z": "d18507d750d6e5f3",
+        "name": "",
+        "client": "9af5180ef9b94f79",
+        "responseType": "json",
+        "requestUrl": "",
+        "requestMethod": "",
+        "requestBody": "",
+        "x": 590,
+        "y": 80,
+        "wires": [
+            [
+                "22acda0b41ab3309",
+                "198b773893604d03"
+            ]
+        ]
+    },
+    {
+        "id": "22acda0b41ab3309",
+        "type": "function",
+        "z": "d18507d750d6e5f3",
+        "name": "total items",
+        "func": "msg.totalItems = msg.payload.totalItems\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 770,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "37dff94bfc7ea001",
+        "type": "function",
+        "z": "d18507d750d6e5f3",
+        "name": "Window",
+        "func": "msg.payload = \"Search - \" + msg.searchn + \" - Top - \" + msg.top + \" - skip - \" + msg.skip;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "198b773893604d03",
+        "type": "function",
+        "z": "d18507d750d6e5f3",
+        "name": "Window",
+        "func": "msg.payload = \"Search - Finished\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 180,
+        "wires": [
+            [
+                "fa078cfed0f147af"
+            ]
+        ]
+    },
+    {
+        "id": "fa078cfed0f147af",
+        "type": "delay",
+        "z": "d18507d750d6e5f3",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 740,
+        "y": 140,
+        "wires": [
+            [
+                "2b6ecbb214dc59ec"
+            ]
+        ]
+    },
+    {
+        "id": "2b6ecbb214dc59ec",
+        "type": "function",
+        "z": "d18507d750d6e5f3",
+        "name": "Window",
+        "func": "msg.payload = \"\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 880,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b76d7293a8595b6e",
+        "type": "subflow:54ffaf761b3ddaef",
+        "z": "c0dd4a6d4d7bf9e0",
+        "g": "cfb30436034df5d7",
+        "name": "",
+        "x": 770,
+        "y": 160,
+        "wires": [
+            [
+                "7643bdab3314cf41"
+            ]
+        ]
+    },
+    {
+        "id": "0c568eab4d58ab52",
+        "type": "subflow:61f033226d93ab2c",
+        "z": "c0dd4a6d4d7bf9e0",
+        "g": "cfb30436034df5d7",
+        "name": "",
+        "x": 750,
+        "y": 100,
+        "wires": [
+            [
+                "b76d7293a8595b6e"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "7512285ef3b8e8e8",
+        "type": "change",
+        "z": "c0dd4a6d4d7bf9e0",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "eventClass",
+                "pt": "msg",
+                "to": "payload.data.eventClass",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "eventType",
+                "pt": "msg",
+                "to": "payload.data.eventType",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "user",
+                "pt": "msg",
+                "to": "payload.data.user",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "authorization",
+                "pt": "msg",
+                "to": "payload.data.authorization",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "source",
+                "pt": "msg",
+                "to": "payload.data.subject.source",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "contentType",
+                "pt": "msg",
+                "to": "payload.data.subject.type",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "identifier",
+                "pt": "msg",
+                "to": "payload.data.subject.identifier",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "relativePath",
+                "pt": "msg",
+                "to": "payload.data.subject.relativePath",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "top",
+                "pt": "msg",
+                "to": "11",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "skip",
+                "pt": "msg",
+                "to": "0",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "searchn",
+                "pt": "msg",
+                "to": "1",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 370,
+        "y": 100,
+        "wires": [
+            [
+                "1d35d2af762e16fd"
+            ]
+        ]
+    },
+    {
+        "id": "d4c4217da3019b83",
+        "type": "inject",
+        "z": "c0dd4a6d4d7bf9e0",
+        "name": "start",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "3600",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"specversion\":\"1.0.0\",\"source\":\"https://R1132100724361-us1-space.3dexperience.3ds.com/enovia\",\"type\":\"statusChanged\",\"id\":\"F1714E852EC61A006577522C000D0403\",\"time\":\"2023-12-11T18:17:16.426+0000\",\"timestamp\":1702318636426,\"metadata\":{\"serviceId\":\"3DSpace\",\"geoId\":\"use1\",\"tenantId\":\"R1132100724361\"},\"contenttype\":\"application/json\",\"data\":{\"eventClass\":\"Engineering Item\",\"eventType\":\"statusChanged\",\"eventTime\":1702318636426,\"serviceName\":\"3DSpace\",\"user\":\"gkr14\",\"authorization\":\"VPLMProjectLeader.Company Name.Kastner - Workshop\",\"subject\":{\"source\":\"https://R1132100724361-us1-space.3dexperience.3ds.com/enovia\",\"type\":\"VPMReference\",\"identifier\":\"346438FA2FC102006577520D00131011\",\"relativePath\":\"/resources/v1/modeler/dseng/dseng:EngItem/346438FA2FC102006577520D00131011\"},\"predicate\":\"state\",\"object\":{\"@type\":\"xs:String\",\"Value\":\"RELEASED\"}}}",
+        "payloadType": "json",
+        "x": 110,
+        "y": 100,
+        "wires": [
+            [
+                "7512285ef3b8e8e8"
+            ]
+        ]
+    },
+    {
+        "id": "7643bdab3314cf41",
+        "type": "subflow:f90a14e52254d964",
+        "z": "c0dd4a6d4d7bf9e0",
+        "g": "cfb30436034df5d7",
+        "name": "",
+        "x": 760,
+        "y": 220,
+        "wires": [
+            [
+                "b4ea4f1ffd335565"
+            ],
+            [
+                "dd16b575d64bc777"
+            ]
+        ]
+    },
+    {
+        "id": "b4ea4f1ffd335565",
+        "type": "subflow:e43b461d0a417bdc",
+        "z": "c0dd4a6d4d7bf9e0",
+        "g": "cfb30436034df5d7",
+        "name": "",
+        "x": 730,
+        "y": 280,
+        "wires": [
+            [
+                "1d35d2af762e16fd"
+            ],
+            [
+                "7d2cb35923575a35"
+            ]
+        ]
+    },
+    {
+        "id": "7d2cb35923575a35",
+        "type": "debug",
+        "z": "c0dd4a6d4d7bf9e0",
+        "g": "cfb30436034df5d7",
+        "name": "downloaded",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 990,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "1d35d2af762e16fd",
+        "type": "subflow:d18507d750d6e5f3",
+        "z": "c0dd4a6d4d7bf9e0",
+        "g": "cfb30436034df5d7",
+        "name": "",
+        "x": 580,
+        "y": 100,
+        "wires": [
+            [
+                "0c568eab4d58ab52"
+            ]
+        ]
+    },
+    {
+        "id": "dd16b575d64bc777",
+        "type": "debug",
+        "z": "c0dd4a6d4d7bf9e0",
+        "g": "cfb30436034df5d7",
+        "name": "ticket and url",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 990,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "7eda1956fe152995",
+        "type": "3dx-activemq-subscriber",
+        "z": "c0dd4a6d4d7bf9e0",
+        "agent": "dfdf26a733623cf0",
+        "name": "",
+        "messageBusUrl": "{{messagebusurl}}",
+        "topic": "{{topic}}",
+        "subscriptionName": "3DxInterface",
+        "x": 150,
+        "y": 180,
+        "wires": [
+            [
+                "7512285ef3b8e8e8"
+            ]
+        ]
+    }
+]
