@@ -1,0 +1,10 @@
+{
+    "1cdc4bab67953ea5": {
+        "login": "{{user}}",
+        "password": "{{password}}"
+    },
+    "dfdf26a733623cf0": {
+        "agentId": "{{agent}}",
+        "agentPassword": "{{agentPassword}}"
+    }
+}
