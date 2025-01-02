@@ -2,7 +2,8 @@
 00 - Settings/secrets.json
 
 # Ignorar credenciais geradas
-data/flows_cred.json
+*flows_cred.json
+Nodered Image/flows_cred.json
 
 # Ignorar arquivos temporários ou de cache
 *.tar
