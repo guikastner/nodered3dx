@@ -5,13 +5,14 @@ $outputCredFileName = "flows_cred.json"
 $settingsDir = "00 - Settings"
 $outputDirName = "Nodered Image"
 
-# Obtenha o caminho absoluto do diretório atual do script
+# Obtenha o caminho absoluto do diretório base a partir do arquivo secrets.json
 $scriptDir = Split-Path -Path $MyInvocation.MyCommand.Definition -Parent
+$baseDir = Join-Path -Path $scriptDir -ChildPath ".."
 
 # Caminhos baseados nas variáveis
-$secretsPath = Join-Path -Path $scriptDir -ChildPath "$settingsDir\$secretsFileName"
-$templatePath = Join-Path -Path $scriptDir -ChildPath "$settingsDir\$templateFileName"
-$outputDir = Join-Path -Path $scriptDir -ChildPath $outputDirName
+$secretsPath = Join-Path -Path $baseDir -ChildPath "$settingsDir\$secretsFileName"
+$templatePath = Join-Path -Path $baseDir -ChildPath "$settingsDir\$templateFileName"
+$outputDir = Join-Path -Path $baseDir -ChildPath $outputDirName
 $outputCredPath = Join-Path -Path $outputDir -ChildPath $outputCredFileName
 
 # Função para verificar se o arquivo existe
